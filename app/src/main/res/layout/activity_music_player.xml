@@ -18,13 +18,13 @@
         android:text="\u266b Sweet Music Player \u266b"
         android:textSize="35sp" />
 
-    <TextView
+    <ImageView
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view1"
         android:layout_centerHorizontal="true"
-        android:text="View 2"
+        android:src="@drawable/franklin"
         android:textSize="35sp" />
 
     <TextView
@@ -38,7 +38,7 @@
 
 
     <TextView
-        android:id="@+id/view4"
+        android:id="@+id/songTitleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -49,18 +49,18 @@
         android:id="@+id/view5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/view4"
-        android:layout_alignTop="@+id/view4"
+        android:layout_toRightOf="@+id/songTitleView"
+        android:layout_alignTop="@+id/songTitleView"
         android:background="#ddd"
-        android:text="View 5"
+        android:text=""
         android:textSize="36sp"/>
 
     <TextView
-        android:id="@+id/view6"
+        android:id="@+id/songArtistView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/view4"
-        android:layout_alignLeft="@id/view4"
+        android:layout_below="@+id/songTitleView"
+        android:layout_alignLeft="@id/songTitleView"
         android:background="#ddd"
         android:text="View 6"
         android:textSize="36sp"/>
@@ -72,7 +72,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:background="#ddd"
-        android:text="View 7"
+        android:text=""
         android:textSize="36sp"/>
 
     <Button
@@ -91,7 +91,7 @@
         android:id="@+id/view9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/view4"
+        android:layout_toRightOf="@+id/songTitleView"
         android:layout_alignParentBottom="true"
         android:background="#ddd"
         android:text="\u25BA"
@@ -147,5 +147,15 @@
         android:layout_alignRight="@+id/view12"
         android:layout_above="@+id/view12"
         android:textSize="35sp"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/currentTime"
+        android:layout_alignRight="@id/finalTime"
+        android:layout_above="@id/currentTime"
+        android:id="@+id/seekBar"
+        android:textSize="35dp"/>
+
 
 </RelativeLayout>
